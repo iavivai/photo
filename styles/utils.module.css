@@ -7,3 +7,17 @@
   margin-bottom: 20px;
   vertical-align: bottom;
 }
+
+.header {
+  font-family: 'Bungee';
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);;
+}
+
+.desktopNav {
+  margin: auto 0 auto auto;
+}
+
+.navItem {
+  margin-right: 20px;
+}
