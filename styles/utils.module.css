@@ -3,5 +3,7 @@
 }
 
 .listImage {
-  width: 50%;
+  width: 300px;
+  margin-bottom: 20px;
+  vertical-align: bottom;
 }
