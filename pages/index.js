@@ -30,7 +30,6 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <main>
-
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className={utilStyles.masonryGrid}
