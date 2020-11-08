@@ -2,13 +2,23 @@ import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
 import Masonry from 'react-masonry-css'
 import Layout from '../components/layout'
+import Post from '../components/post'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import Modal from 'react-modal'
+
+Modal.setAppElement('#__next')
 
 export default function Home({ allPostsData }) {
+  const router = useRouter()
+
   const childElements = allPostsData.map((post) => {
     return (
-      <Link href={`posts/${post.id}`}>
+      <Link
+        href={`/?postId=${post.id}`}
+        as={`/posts/${post.id}`}
+      >
         <img
           className={utilStyles.listImage}
           src={`/images/${post.image}`}
@@ -28,6 +38,13 @@ export default function Home({ allPostsData }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Modal
+        isOpen={!!router.query.postId}
+        onRequestClose={() => router.push('/')}
+      >
+        <Post id={router.query.postId} />
+      </Modal>
 
       <main>
         <Masonry

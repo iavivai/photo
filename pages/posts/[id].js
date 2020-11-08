@@ -3,13 +3,14 @@ import Layout from '../../components/layout'
 import utilStyles from '../../styles/utils.module.css'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
-export default function Post({ postData }) {
+export default function PostPage({ postData }) {
   return (
     // TODO
     <Layout>
       <Head>
         <title>{postData.title}</title>
       </Head>
+
       <main>
         <h1>{postData.title}</h1>
         <div>
