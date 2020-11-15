@@ -31,14 +31,15 @@
   background: rgb(255, 255, 255);
   outline: none;
   padding: 20px;
-  max-width: 60%;
+  width: 60%;
   max-height: 100%;
   border: 1px solid rgb(204, 204, 204);
 }
 
 .modalItem {
   margin: auto;
-  max-height: 100vh;
+  max-height: 70vh;
+  max-width: 100%;
 }
 
 .imgContener {
@@ -47,7 +48,8 @@
 
 .modalImage {
   margin: 0 auto 0;
-  height: 70vh;
+  max-height: 70vh;
+  max-width: 100%;
 }
 
 .masonryGrid {
