@@ -13,13 +13,7 @@ export default function Post({ id }) {
   if (!data) return <div>loading...</div>
 
   return (
-    // TODO
     <div className={utilStyles.modalItem}>
-      <div className={utilStyles.itemHeader}>
-        <h1 className={utilStyles.itemTitle}>{data.title}</h1>
-        <div className={utilStyles.date}>{data.date}</div>
-      </div>
-
       <div className={utilStyles.imgContener}>
         <img
           src={`/images/${data.image}`}
