@@ -14,18 +14,19 @@ export default function Post({ id }) {
 
   return (
     // TODO
-    <>
-      <h1>{data.title}</h1>
-
-      <div>
-        <p>{data.date}</p>
+    <div className={utilStyles.modalItem}>
+      <div className={utilStyles.itemHeader}>
+        <h1 className={utilStyles.itemTitle}>{data.title}</h1>
+        <div className={utilStyles.date}>{data.date}</div>
       </div>
 
-      <img
-        src={`/images/${data.image}`}
-        className={utilStyles.image}
-        alt={data.title}
-      />
-    </>
+      <div className={utilStyles.imgContener}>
+        <img
+          src={`/images/${data.image}`}
+          className={utilStyles.modalImage}
+          alt={data.title}
+        />
+      </div>
+    </div>
   )
 }

@@ -43,6 +43,7 @@ export default function Home({ allPostsData }) {
       <Modal
         isOpen={!!router.query.postId}
         onRequestClose={() => router.push('/')}
+        className={utilStyles.modal}
       >
         <Post id={router.query.postId} />
       </Modal>
