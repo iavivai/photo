@@ -17,7 +17,7 @@ export default function Layout({ children, home }) {
         <meta property="og:title" content={SITE_TITLE} />
         <meta property="og:url" content={SITE_URL} />
         <meta property="og:description" content={SITE_DESCRIPTION} />
-        <meta property="og:image" content="/favicon.ico" />
+        <meta property="og:image" content="/images/icon.jpeg" />
         <meta name="description" content={SITE_DESCRIPTION} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content={`@${NAME}`} />
