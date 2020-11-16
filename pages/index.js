@@ -42,7 +42,7 @@ export default function Home({ allPostsData }) {
 
   const breakpointColumnsObj = {
     default: 3,
-    768: 1
+    700: 1
   };
 
   return (

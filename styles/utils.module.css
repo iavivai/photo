@@ -3,8 +3,8 @@
 }
 
 .listImage {
-  width: 300px;
-  margin-bottom: 20px;
+  width: 95%;
+  margin-bottom: 5%;
   vertical-align: bottom;
 }
 
@@ -80,7 +80,7 @@
   color: #757575;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);;
