@@ -1,5 +1,6 @@
 import utilStyles from '../styles/utils.module.css'
 import useSWR from 'swr'
+import fetch from 'node-fetch'
 import { SITE_URL } from '../lib/constants'
 
 const fetcher = (id) =>

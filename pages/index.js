@@ -6,7 +6,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Modal from 'react-modal'
-import { isBrowser, isMobile } from 'react-device-detect'
+import { isMobile } from 'react-device-detect'
 
 Modal.setAppElement('#__next')
 

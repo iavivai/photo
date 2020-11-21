@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import styles from './layout.module.css'
-import Link from 'next/link'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import { NAME, SITE_TITLE, SITE_URL, SITE_DESCRIPTION } from '../lib/constants'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <div className={styles.container}>
       <Head>
