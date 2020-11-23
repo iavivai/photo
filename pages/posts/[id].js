@@ -1,10 +1,22 @@
 import Layout from '../../components/layout'
 import utilStyles from '../../styles/utils.module.css'
 import { getAllPostIds } from '../../lib/posts'
+import Link from 'next/link'
 
 export default function PostPage({ id }) {
   return (
     <Layout>
+      <div className={utilStyles.unsplash}>
+        <Link href={`https://unsplash.com/photos/${id}`}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className={utilStyles.unsplashLink}
+          >
+            Unsplash
+          </a>
+        </Link>
+      </div>
       <img
         src={`/photos/${id}.jpg`}
         className={utilStyles.image}
