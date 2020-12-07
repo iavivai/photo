@@ -39,9 +39,9 @@ export default function Photos({ photosData }) {
 
   return (
     <Masonry
-        breakpointCols={breakpoint}
-        className={utilStyles.masonryGrid}
-        columnClassName='my-masonry-grid_column'
+      breakpointCols={breakpoint}
+      className={utilStyles.masonryGrid}
+      columnClassName='my-masonry-grid_column'
     >
       {items}
     </Masonry>
