@@ -1,4 +1,4 @@
-import utilStyles from '../styles/utils.module.css'
+import homeStyles from '../styles/home.module.css'
 import Layout from '../components/layout'
 import Post from '../components/post'
 import { getPhotosData } from '../lib/posts'
@@ -16,7 +16,7 @@ export default function Home({ allPhotosData }) {
       <Modal
         isOpen={!!router.query.postId}
         onRequestClose={() => router.push('/')}
-        className={utilStyles.modal}
+        className={homeStyles.modal}
       >
         <Post id={router.query.postId} />
       </Modal>

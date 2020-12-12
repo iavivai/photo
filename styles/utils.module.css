@@ -26,33 +26,6 @@
   margin-left: 20px;
 }
 
-.unsplash {
-  margin: 30px auto;
-  text-align: center;
-}
-
-.unsplashLink {
-  border: 2px solid #757575;
-  padding: 10px;
-  border-radius: 10px;
-  font-family: 'Bungee';
-}
-
-.unsplashLink:hover {
-  background: #757575;
-  color: white;
-}
-
-.modal {
-  margin: 60px auto 0;
-  background: rgb(255, 255, 255);
-  outline: none;
-  padding: 20px;
-  width: 60%;
-  max-height: 100%;
-  border: 1px solid rgb(204, 204, 204);
-}
-
 .modalItem {
   margin: auto;
   max-height: 80vh;
