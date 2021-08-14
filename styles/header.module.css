@@ -8,12 +8,19 @@
 }
 
 .desktopNav {
+  display: flex;
   margin: auto 0 auto auto;
   font-size: 17px;
 }
 
 .navItem {
-  margin-left: 20px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
 }
 
 .toggle,
