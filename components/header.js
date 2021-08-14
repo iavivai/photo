@@ -22,19 +22,19 @@ export default function Header() {
         </h1>
 
         <nav className={styles.desktopNav}>
-          <Link href="https://instagram.com/iavivai">
+          <Link href="https://instagram.com/yukitakaiha">
             <a rel="noopener noreferrer" target="_blank"  className={styles.navItem}>
               <SiInstagram className={styles.icon} size={24} />
               Instagram
             </a>
           </Link>
-          <Link href="https://unsplash.com/@iavivai">
+          <Link href="https://unsplash.com/@utakaha">
             <a rel="noopener noreferrer" target="_blank" className={styles.navItem}>
               <SiUnsplash className={styles.icon} size={20} />
               Unsplash
             </a>
           </Link>
-          <Link href="https://iavivai.com/about">
+          <Link href="https://utakaha.com/about">
             <a rel="noopener noreferrer" target="_blank" className={styles.navItem}>
               <CgProfile className={styles.icon} size={26} />
               ABOUT
@@ -48,13 +48,13 @@ export default function Header() {
       </header>
 
       <nav className={`${styles.mobileNav} ${mobileNavShown ? styles.active : ''}`}>
-        <Link href="https://instagram.com/iavivai">
+        <Link href="https://instagram.com/yukitakaiha">
           <a rel="noopener noreferrer" target="_blank" className={styles.navItem}>
             <SiInstagram className={styles.icon} size={16} />
             Instagram
           </a>
         </Link>
-        <Link href="https://unsplash.com/@iavivai">
+        <Link href="https://unsplash.com/@utakaha">
           <a rel="noopener noreferrer" target="_blank" className={styles.navItem}>
             <SiUnsplash className={styles.icon} size={16} />
             Unsplash
