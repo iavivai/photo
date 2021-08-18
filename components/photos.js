@@ -45,9 +45,9 @@ export default function Photos({ photosData }) {
       )
     })
   ) : (
-    separateColumnPhotos.map((photos) => {
+    separateColumnPhotos.map((photos, index) => {
       return (
-        <div>
+        <div key={index}>
           {photos.map((photo) => {
             return (
               <Link
