@@ -15,7 +15,7 @@ export default function Home({ allPhotosData }) {
     <Layout home>
       <Modal
         isOpen={!!router.query.postId}
-        onRequestClose={() => router.push('/')}
+        onRequestClose={() => router.push('/', null, { scroll: false })}
         className={homeStyles.modal}
       >
         <ModalPhoto id={router.query.postId} />

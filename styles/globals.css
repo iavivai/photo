@@ -14,3 +14,7 @@ a {
 a:hover {
   color: #000;
 }
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}

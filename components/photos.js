@@ -50,6 +50,7 @@ export default function Photos({ photosData }) {
                   key={photo.id}
                   href={`/?postId=${photo.id}`}
                   as={`/posts/${photo.id}`}
+                  scroll={false}
                 >
                   <img
                     className={styles.listImage}
